@@ -1,0 +1,271 @@
+Command: /fetools/work_area/frontend/shreyasb/bench_project/Apb_RAL/./simv +UVM_TESTNAME=all_test -cm line+cond+branch+tgl+fsm -cm_dir ./overall_cov.vdb -l frontdoor.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Oct 30 15:05 2026
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test all_test...
+UVM_INFO reg_seq.sv(320) @ 0: uvm_test_top.env.agent_inst.seqr@@rseq [SEQ] ========== REGISTER VERIFICATION START ==========
+UVM_INFO reg_seq.sv(325) @ 0: uvm_test_top.env.agent_inst.seqr@@rseq [SEQ] Unlocking register block...
+Time=1000 presetn=0 port_enable_q=f locked=1
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(49) @ 30000: uvm_test_top.env.agent_inst.drv [DRV] Data Write -> Wdata : a5a5c3c3
+-------------monitor begin----------
+-----------DRIVER----------
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(74) @ 90000: uvm_test_top.env.agent_inst.drv [DRV] Data READ -> read data : 0
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(339) @ 110000: uvm_test_top.env.agent_inst.seqr@@rseq [SEQ] Register block unlocked successfully
+UVM_INFO reg_seq.sv(350) @ 110000: uvm_test_top.env.agent_inst.seqr@@rseq [SEQ] ----- RO REGISTER TESTS START -----
+UVM_INFO reg_seq.sv(195) @ 110000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== START RO: device_id_inst ==========
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(74) @ 150000: uvm_test_top.env.agent_inst.drv [DRV] Data READ -> read data : 0
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(207) @ 170000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] device_id_inst READ SUCCESS: Data = 0x02a55357
+UVM_INFO reg_seq.sv(212) @ 170000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== END RO: device_id_inst ==========
+UVM_INFO reg_seq.sv(195) @ 170000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== START RO: version_inst ==========
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(74) @ 210000: uvm_test_top.env.agent_inst.drv [DRV] Data READ -> read data : 0
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(207) @ 230000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] version_inst READ SUCCESS: Data = 0x00010200
+UVM_INFO reg_seq.sv(212) @ 230000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== END RO: version_inst ==========
+UVM_INFO reg_seq.sv(195) @ 230000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== START RO: switch_status_inst ==========
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(74) @ 270000: uvm_test_top.env.agent_inst.drv [DRV] Data READ -> read data : 0
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(207) @ 290000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] switch_status_inst READ SUCCESS: Data = 0x000000f1
+UVM_INFO reg_seq.sv(212) @ 290000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== END RO: switch_status_inst ==========
+UVM_INFO reg_seq.sv(195) @ 290000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== START RO: port_status_inst ==========
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(74) @ 330000: uvm_test_top.env.agent_inst.drv [DRV] Data READ -> read data : 0
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(207) @ 350000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] port_status_inst READ SUCCESS: Data = 0x00000000
+UVM_INFO reg_seq.sv(212) @ 350000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== END RO: port_status_inst ==========
+UVM_INFO reg_seq.sv(195) @ 350000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== START RO: gen_status_inst ==========
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(74) @ 390000: uvm_test_top.env.agent_inst.drv [DRV] Data READ -> read data : 0
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(207) @ 410000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] gen_status_inst READ SUCCESS: Data = 0x00000000
+UVM_INFO reg_seq.sv(212) @ 410000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== END RO: gen_status_inst ==========
+UVM_INFO reg_seq.sv(195) @ 410000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== START RO: stat_rx_inst ==========
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(74) @ 450000: uvm_test_top.env.agent_inst.drv [DRV] Data READ -> read data : 0
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(207) @ 470000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] stat_rx_inst READ SUCCESS: Data = 0x00000000
+UVM_INFO reg_seq.sv(212) @ 470000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== END RO: stat_rx_inst ==========
+UVM_INFO reg_seq.sv(195) @ 470000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== START RO: stat_tx_inst ==========
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(74) @ 510000: uvm_test_top.env.agent_inst.drv [DRV] Data READ -> read data : 0
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(207) @ 530000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] stat_tx_inst READ SUCCESS: Data = 0x00000000
+UVM_INFO reg_seq.sv(212) @ 530000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== END RO: stat_tx_inst ==========
+UVM_INFO reg_seq.sv(195) @ 530000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== START RO: stat_drop_inst ==========
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(74) @ 570000: uvm_test_top.env.agent_inst.drv [DRV] Data READ -> read data : 0
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(207) @ 590000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] stat_drop_inst READ SUCCESS: Data = 0x00000000
+UVM_INFO reg_seq.sv(212) @ 590000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== END RO: stat_drop_inst ==========
+UVM_INFO reg_seq.sv(195) @ 590000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== START RO: err_count_inst ==========
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(74) @ 630000: uvm_test_top.env.agent_inst.drv [DRV] Data READ -> read data : 0
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(207) @ 650000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] err_count_inst READ SUCCESS: Data = 0x00000000
+UVM_INFO reg_seq.sv(212) @ 650000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== END RO: err_count_inst ==========
+UVM_INFO reg_seq.sv(195) @ 650000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== START RO: err_info_inst ==========
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(74) @ 690000: uvm_test_top.env.agent_inst.drv [DRV] Data READ -> read data : 0
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(207) @ 710000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] err_info_inst READ SUCCESS: Data = 0x00000000
+UVM_INFO reg_seq.sv(212) @ 710000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== END RO: err_info_inst ==========
+UVM_INFO reg_seq.sv(363) @ 710000: uvm_test_top.env.agent_inst.seqr@@rseq [SEQ] ----- RO REGISTER TESTS END -----
+UVM_INFO reg_seq.sv(369) @ 710000: uvm_test_top.env.agent_inst.seqr@@rseq [SEQ] ----- RW REGISTER TESTS START -----
+UVM_INFO reg_seq.sv(229) @ 710000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== START RW: port_enable_inst ==========
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(49) @ 750000: uvm_test_top.env.agent_inst.drv [DRV] Data Write -> Wdata : 1
+-------------monitor begin----------
+-----------DRIVER----------
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(74) @ 810000: uvm_test_top.env.agent_inst.drv [DRV] Data READ -> read data : 0
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(273) @ 830000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] port_enable_inst PASS: Expected=0x00000001 Read=0x00000001 Mirror=0x00000001
+UVM_INFO reg_seq.sv(277) @ 830000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== END RW: port_enable_inst ==========
+UVM_INFO reg_seq.sv(229) @ 830000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== START RW: fwd_enable_inst ==========
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(49) @ 870000: uvm_test_top.env.agent_inst.drv [DRV] Data Write -> Wdata : 1
+-------------monitor begin----------
+-----------DRIVER----------
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(74) @ 930000: uvm_test_top.env.agent_inst.drv [DRV] Data READ -> read data : 0
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(273) @ 950000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] fwd_enable_inst PASS: Expected=0x00000001 Read=0x00000001 Mirror=0x00000001
+UVM_INFO reg_seq.sv(277) @ 950000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== END RW: fwd_enable_inst ==========
+UVM_INFO reg_seq.sv(229) @ 950000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== START RW: gen_pkt_cfg_inst ==========
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(49) @ 990000: uvm_test_top.env.agent_inst.drv [DRV] Data Write -> Wdata : 101
+-------------monitor begin----------
+-----------DRIVER----------
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(74) @ 1050000: uvm_test_top.env.agent_inst.drv [DRV] Data READ -> read data : 0
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(273) @ 1070000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] gen_pkt_cfg_inst PASS: Expected=0x00000101 Read=0x00000101 Mirror=0x00000101
+UVM_INFO reg_seq.sv(277) @ 1070000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== END RW: gen_pkt_cfg_inst ==========
+UVM_INFO reg_seq.sv(229) @ 1070000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== START RW: gen_interval_inst ==========
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(49) @ 1110000: uvm_test_top.env.agent_inst.drv [DRV] Data Write -> Wdata : 1
+-------------monitor begin----------
+-----------DRIVER----------
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(74) @ 1170000: uvm_test_top.env.agent_inst.drv [DRV] Data READ -> read data : 0
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(273) @ 1190000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] gen_interval_inst PASS: Expected=0x00000001 Read=0x00000001 Mirror=0x00000001
+UVM_INFO reg_seq.sv(277) @ 1190000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== END RW: gen_interval_inst ==========
+UVM_INFO reg_seq.sv(229) @ 1190000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== START RW: gen_count_inst ==========
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(49) @ 1230000: uvm_test_top.env.agent_inst.drv [DRV] Data Write -> Wdata : 1
+-------------monitor begin----------
+-----------DRIVER----------
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(74) @ 1290000: uvm_test_top.env.agent_inst.drv [DRV] Data READ -> read data : 0
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(273) @ 1310000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] gen_count_inst PASS: Expected=0x00000001 Read=0x00000001 Mirror=0x00000001
+UVM_INFO reg_seq.sv(277) @ 1310000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== END RW: gen_count_inst ==========
+UVM_INFO reg_seq.sv(229) @ 1310000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== START RW: irq_enable_inst ==========
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(49) @ 1350000: uvm_test_top.env.agent_inst.drv [DRV] Data Write -> Wdata : 1
+-------------monitor begin----------
+-----------DRIVER----------
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(74) @ 1410000: uvm_test_top.env.agent_inst.drv [DRV] Data READ -> read data : 0
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(273) @ 1430000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] irq_enable_inst PASS: Expected=0x00000001 Read=0x00000001 Mirror=0x00000001
+UVM_INFO reg_seq.sv(277) @ 1430000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== END RW: irq_enable_inst ==========
+UVM_INFO reg_seq.sv(229) @ 1430000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== START RW: err_enable_inst ==========
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(49) @ 1470000: uvm_test_top.env.agent_inst.drv [DRV] Data Write -> Wdata : 1
+-------------monitor begin----------
+-----------DRIVER----------
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(74) @ 1530000: uvm_test_top.env.agent_inst.drv [DRV] Data READ -> read data : 0
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(273) @ 1550000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] err_enable_inst PASS: Expected=0x00000001 Read=0x00000001 Mirror=0x00000001
+UVM_INFO reg_seq.sv(277) @ 1550000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== END RW: err_enable_inst ==========
+UVM_INFO reg_seq.sv(379) @ 1550000: uvm_test_top.env.agent_inst.seqr@@rseq [SEQ] ----- RW REGISTER TESTS END -----
+UVM_INFO reg_seq.sv(385) @ 1550000: uvm_test_top.env.agent_inst.seqr@@rseq [SEQ] ----- WO REGISTER TESTS START -----
+UVM_INFO reg_seq.sv(289) @ 1550000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== START WO: irq_force_inst ==========
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(49) @ 1590000: uvm_test_top.env.agent_inst.drv [DRV] Data Write -> Wdata : 1
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(302) @ 1610000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] irq_force_inst WRITE TRANSACTION SUCCESS: Data=0x00000001
+UVM_INFO reg_seq.sv(307) @ 1610000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== END WO: irq_force_inst ==========
+UVM_INFO reg_seq.sv(289) @ 1610000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== START WO: err_inject_inst ==========
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(49) @ 1650000: uvm_test_top.env.agent_inst.drv [DRV] Data Write -> Wdata : 1
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(302) @ 1670000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] err_inject_inst WRITE TRANSACTION SUCCESS: Data=0x00000001
+UVM_INFO reg_seq.sv(307) @ 1670000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== END WO: err_inject_inst ==========
+UVM_INFO reg_seq.sv(289) @ 1670000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== START WO: soft_reset_reg_inst ==========
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO driver.sv(49) @ 1710000: uvm_test_top.env.agent_inst.drv [DRV] Data Write -> Wdata : 1
+-------------monitor begin----------
+-----------DRIVER----------
+UVM_INFO reg_seq.sv(302) @ 1730000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] soft_reset_reg_inst WRITE TRANSACTION SUCCESS: Data=0x00000001
+UVM_INFO reg_seq.sv(307) @ 1730000: uvm_test_top.env.agent_inst.seqr@@rseq [RAL_TEST] ========== END WO: soft_reset_reg_inst ==========
+UVM_INFO reg_seq.sv(393) @ 1730000: uvm_test_top.env.agent_inst.seqr@@rseq [SEQ] ----- WO REGISTER TESTS END -----
+UVM_INFO reg_seq.sv(396) @ 1730000: uvm_test_top.env.agent_inst.seqr@@rseq [SEQ] ========== REGISTER VERIFICATION END ==========
+-------------monitor begin----------
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 1760000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_report_server.svh(894) @ 1760000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :  102
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[DRV]    29
+[RAL_TEST]    60
+[RNTST]     1
+[SEQ]    10
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+
+$finish called from file "/fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time              1760000
+
+---------------------------------------------------------------------------
+VCS Coverage Metrics: during simulation line, cond, FSM, branch, tgl was monitored
+---------------------------------------------------------------------------
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 1760000 ps
+CPU Time:      0.870 seconds;       Data structure size:   0.6Mb
+Fri Oct 30 15:05:20 2026

@@ -1,0 +1,4 @@
+tb.DUT.u_gen.GEN_DONE3
+tb.DUT.u_gen.GEN_GAP2
+tb.DUT.u_gen.GEN_IDLE0
+tb.DUT.u_gen.GEN_SEND1

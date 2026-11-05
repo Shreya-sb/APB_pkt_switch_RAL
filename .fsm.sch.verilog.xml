@@ -1,0 +1,8 @@
+<Command name="schRTLInfo"  delimiter="."  >
+<RTLBlock >
+<RTLInfo   name="fsm_q_0"  type="2"  fileName="apb_pkt_pkg.sv"  >
+    <Seg beginLine="144"  endLine="180"  />
+  </RTLInfo>
+<Instance name="tb.DUT.u_gen"  />
+</RTLBlock>
+</Command>

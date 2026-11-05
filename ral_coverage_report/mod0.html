@@ -1,0 +1,3655 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="Author" content="<username>"> <meta name="GENERATOR" content="urg/version [en] (platform name) [urg]">
+<title>Unified Coverage Report :: Module :: apb_pkt_switch</title>
+<link type="text/css" rel="stylesheet" href="css/.urg.css">
+<link type="text/css" rel="stylesheet" href="css/.layout.css">
+<link type="text/css" rel="stylesheet" href="css/.breadcrumb.css">
+<script type="text/javascript" src="js/.jquery.js"></script>
+<script type="text/javascript" src="js/.jquery-ui.js"></script>
+<script type="text/javascript" src="js/.sortable.js"></script>
+<script type="text/javascript" src="js/.layout.js"></script>
+<script type="text/javascript" src="js/.breadcrumb.js"></script>
+<script type="text/javascript">
+var layout, westLayout, centerLayout;
+$(document).ready(function () {
+  if ($("#north-bread-crumb")) {
+    $("#north-bread-crumb").jBreadCrumb({easing:'swing'})
+  }
+  layout = $("body").layout({ 
+    resizable: true,
+    spacing_open: 4,
+    spacing_closed: 4,
+    north: {
+      size: 76
+    },
+    south: {
+      size: 45,
+      initClosed: true
+    },
+    west: {
+      size: 500,
+      resizable: true,
+      initClosed: false
+    }
+  });
+  centerLayout = $('div.ui-layout-center').layout({
+    north__paneSelector: ".ui-layout-center-inner-north",
+    center__paneSelector: ".ui-layout-center-inner-center", 
+    north__size: 50,
+    spacing_open: 4,
+    spacing_closed: 4
+  });
+});
+</script>
+</head>
+<body onLoad="initPage();"><div class="ui-layout-north">
+<div class="logo"></div>
+<center class="pagetitle">Module Definition</center>
+<div align="center"><a href="dashboard.html" ><b>dashboard</b></a> | <a href="hierarchy.html" ><b>hierarchy</b></a> | <a href="modlist.html" ><b>modlist</b></a> | <a href="groups.html" ><b>groups</b></a> | <a href="tests.html" ><b>tests</b></a> | asserts</div>
+
+</div>
+<div class="ui-layout-west">
+<div name='tag_apb_pkt_switch'>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module : <a href="#"  onclick="showContent('tag_apb_pkt_switch')">apb_pkt_switch</a></span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s5 cl rt"> 56.51</td>
+<td class="s8 cl rt"><a href="mod0.html#Line" > 85.48</a></td>
+<td class="s4 cl rt"><a href="mod0.html#Cond" > 46.88</a></td>
+<td class="s2 cl rt"><a href="mod0.html#Toggle" > 21.21</a></td>
+<td class="wht cl rt"></td>
+<td class="s7 cl rt"><a href="mod0.html#Branch" > 72.48</a></td>
+</tr></table><br clear=all>
+<span class=repname>Source File(s) : </span>
+<br clear=all>
+<a href="javascript:void(0);"  onclick="openSrcFile('/fetools/work_area/frontend/shreyasb/bench_project/Apb_RAL/apb_pkt_pkg.sv')">/fetools/work_area/frontend/shreyasb/bench_project/Apb_RAL/apb_pkt_pkg.sv</a><br clear=all>
+<br clear=all>
+<span class=repname>Module self-instances :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod0.html#inst_tag_0"  onclick="showContent('inst_tag_0')">tb.DUT</a></td>
+<td class="s5 cl rt"> 56.51</td>
+<td class="s8 cl rt"><a href="mod0.html#Line" > 85.48</a></td>
+<td class="s4 cl rt"><a href="mod0.html#Cond" > 46.88</a></td>
+<td class="s2 cl rt"><a href="mod0.html#Toggle" > 21.21</a></td>
+<td class="wht cl rt"></td>
+<td class="s7 cl rt"><a href="mod0.html#Branch" > 72.48</a></td>
+</tr></table></div>
+</div>
+<br clear=all>
+<div name='tag_apb_pkt_switch'>
+<hr>
+<a name="inst_tag_0"></a>
+<div class=modhdr>
+<br clear=all>
+<span class=titlename>Module Instance : <a href="hierarchy.html#tag_urg_inst_0" >tb.DUT</a></span>
+<br clear=all>
+<br clear=all>
+<span class=repname>Instance :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s5 cl rt"> 56.51</td>
+<td class="s8 cl rt"><a href="mod0.html#Line" > 85.48</a></td>
+<td class="s4 cl rt"><a href="mod0.html#Cond" > 46.88</a></td>
+<td class="s2 cl rt"><a href="mod0.html#Toggle" > 21.21</a></td>
+<td class="wht cl rt"></td>
+<td class="s7 cl rt"><a href="mod0.html#Branch" > 72.48</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Instance's subtree :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="s3 cl rt"> 35.66</td>
+<td class="s7 cl rt"> 73.09</td>
+<td class="s2 cl rt"> 28.28</td>
+<td class="s1 cl rt"> 16.92</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s6 cl rt"> 60.00</td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Parent : </span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td><td class="alfsrt">NAME</td></tr><tr>
+<td class="s8 cl rt"> 87.50</td>
+<td class="s10 cl rt">100.00</td>
+<td class="wht cl rt"></td>
+<td class="s7 cl rt"> 75.00</td>
+<td class="wht cl rt"></td>
+<td class="wht cl rt"></td>
+<td><a href="mod9.html#inst_tag_9" >tb</a></td>
+</tr></table><br clear=all>
+<br clear=all>
+<span class=repname>Subtrees :</span>
+<br clear=all>
+<table align=left>
+<tr class="sortablehead">
+<td class="alfsrt">NAME</td><td>SCORE</td><td>LINE</td><td>COND</td><td>TOGGLE</td><td>FSM</td><td>BRANCH</td></tr><tr>
+<td class="wht cl wordwrap"><a href="mod4.html#inst_tag_4" id="tag_urg_inst_4">u_gen</a></td>
+<td class="s2 cl rt"> 20.18</td>
+<td class="s3 cl rt"> 34.88</td>
+<td class="s2 cl rt"> 28.95</td>
+<td class="s1 cl rt"> 13.27</td>
+<td class="s0 cl rt">  0.00</td>
+<td class="s2 cl rt"> 23.81</td>
+</tr><tr>
+<td class="wht cl wordwrap"><a href="mod2.html#inst_tag_2" id="tag_urg_inst_2">u_sw</a></td>
+<td class="s2 cl rt"> 25.47</td>
+<td class="s5 cl rt"> 58.70</td>
+<td class="s0 cl rt">  6.90</td>
+<td class="s0 cl rt">  6.28</td>
+<td class="wht cl rt"></td>
+<td class="s3 cl rt"> 30.00</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<hr>
+Since this is the module's only instance, the coverage report is the same as for the module.</div>
+<div class="ui-layout-center">
+<div class="ui-layout-center-inner-center">
+<div name='tag_apb_pkt_switch'>
+<a name="Line"></a>
+Line Coverage for Module : <a href="mod0.html" >apb_pkt_switch</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="4" width="82">
+<tr><th></th><th>Line No.</th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s8"><td class="lf">TOTAL</td><td></td><td>186</td><td>159</td><td>85.48</td></tr>
+<tr class="s8"><td class="lf">ALWAYS</td><td>409</td><td>33</td><td>28</td><td>84.85</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>531</td><td>9</td><td>9</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>544</td><td>5</td><td>5</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>554</td><td>5</td><td>5</td><td>100.00</td></tr>
+<tr class="s7"><td class="lf">ALWAYS</td><td>566</td><td>10</td><td>7</td><td>70.00</td></tr>
+<tr class="s6"><td class="lf">ALWAYS</td><td>583</td><td>15</td><td>9</td><td>60.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>602</td><td>3</td><td>3</td><td>100.00</td></tr>
+<tr class="s10"><td class="lf">ALWAYS</td><td>607</td><td>4</td><td>4</td><td>100.00</td></tr>
+<tr class="s8"><td class="lf">ALWAYS</td><td>614</td><td>69</td><td>61</td><td>88.41</td></tr>
+<tr class="s8"><td class="lf">ALWAYS</td><td>702</td><td>28</td><td>24</td><td>85.71</td></tr>
+<tr class="s7"><td class="lf">ALWAYS</td><td>735</td><td>5</td><td>4</td><td>80.00</td></tr>
+</table>
+<pre class="code"><br clear=all>
+408                       always_comb begin
+409        3/3              wr_switch_ctrl = 1'b0; wr_port_en = 1'b0; wr_fwd_en = 1'b0;
+410        4/4              wr_gen_ctrl = 1'b0; wr_gen_pkt = 1'b0; wr_gen_int = 1'b0; wr_gen_cnt = 1'b0;
+411        3/3              wr_irq_status = 1'b0; wr_irq_enable = 1'b0; wr_irq_force = 1'b0;
+412        3/3              wr_err_status = 1'b0; wr_err_enable = 1'b0; wr_err_inject = 1'b0;
+413        2/2              wr_lock = 1'b0; wr_soft_reset = 1'b0;
+414        1/1              if (wr_ok) begin
+415        1/1                unique case (word_addr)
+416        <font color = "red">0/1     ==>          ADDR_SWITCH_CTRL: wr_switch_ctrl = 1'b1;</font>
+417        1/1                  ADDR_PORT_ENABLE: wr_port_en      = 1'b1;
+418        1/1                  ADDR_FWD_ENABLE: wr_fwd_en        = 1'b1;
+419        <font color = "red">0/1     ==>          ADDR_GEN_CTRL:    wr_gen_ctrl     = 1'b1;</font>
+420        1/1                  ADDR_GEN_PKT_CFG: wr_gen_pkt      = 1'b1;
+421        1/1                  ADDR_GEN_INTERVAL:wr_gen_int      = 1'b1;
+422        1/1                  ADDR_GEN_COUNT:   wr_gen_cnt      = 1'b1;
+423        <font color = "red">0/1     ==>          ADDR_IRQ_STATUS: wr_irq_status = 1'b1;</font>
+424        1/1                  ADDR_IRQ_ENABLE: wr_irq_enable = 1'b1;
+425        1/1                  ADDR_IRQ_FORCE:   wr_irq_force    = 1'b1;
+426        <font color = "red">0/1     ==>          ADDR_ERR_STATUS: wr_err_status = 1'b1;</font>
+427        1/1                  ADDR_ERR_ENABLE: wr_err_enable = 1'b1;
+428        1/1                  ADDR_ERR_INJECT: wr_err_inject = 1'b1;
+429        1/1                  ADDR_LOCK:        wr_lock         = 1'b1;
+430        1/1                  ADDR_SOFT_RESET: wr_soft_reset = 1'b1;
+431        <font color = "red">0/1     ==>          default: ;</font>
+432                           endcase
+433                         end
+                        MISSING_ELSE
+434                       end
+435                     
+436                       logic cfg_wr_ok;
+437                       assign cfg_wr_ok = wr_ok &amp; ~locked;
+438                     
+439                       logic srst_pulse, stat_clr_pulse, start_pulse, stop_pulse;
+440                       assign srst_pulse     = wr_soft_reset &amp; pwdata[0];
+441                       assign stat_clr_pulse = wr_switch_ctrl &amp; cfg_wr_ok &amp; pwdata[1];
+442                       assign start_pulse    = wr_gen_ctrl &amp; cfg_wr_ok &amp; pwdata[1];
+443                       assign stop_pulse     = wr_gen_ctrl &amp; cfg_wr_ok &amp; pwdata[2];
+444                     
+445                       logic [7:0] irq_force_w, err_inject_w;
+446                       logic err_clr_count;
+447                       assign irq_force_w   = wr_irq_force ? pwdata[7:0] : 8'h00;
+448                       assign err_inject_w = wr_err_inject ? pwdata[7:0] : 8'h00;
+449                       assign err_clr_count = wr_err_inject &amp; pwdata[31];
+450                     
+451                       logic switch_en, irq_gen_en, gen_en, gen_cont;
+452                       assign switch_en = switch_ctrl_q[0];
+453                       assign irq_gen_en = switch_ctrl_q[3];
+454                       assign gen_en     = gen_ctrl_q[0];
+455                       assign gen_cont   = gen_ctrl_q[3];
+456                     
+457                       logic        gen_valid, gen_sop, gen_eop, gen_ready;
+458                       logic [1:0] gen_dst, gen_src, gen_fsm;
+459                       logic [7:0] gen_len;
+460                       logic [31:0] gen_data;
+461                       logic        gen_running, gen_done_pulse, gen_start_ack;
+462                       logic [15:0] gen_left;
+463                     
+464                       logic gen_en_eff;
+465                       assign gen_en_eff = (cfg_wr_ok &amp;&amp; wr_gen_ctrl) ? pwdata[0] : gen_en;
+466                     
+467                       pkt_generator u_gen (
+468                         .clk         (pclk),
+469                     
+470                            .rst_n       (presetn),
+471                            .enable      (gen_en_eff),
+472                            .start_pulse (start_pulse),
+473                            .stop_pulse (stop_pulse | srst_pulse),
+474                            .continuous (gen_cont),
+475                            .cfg_dst     (gen_pkt_cfg_q[1:0]),
+476                            .cfg_src     (gen_pkt_cfg_q[3:2]),
+477                            .cfg_len     (gen_pkt_cfg_q[15:8]),
+478                            .cfg_seed    (gen_pkt_cfg_q[23:16]),
+479                            .cfg_interval(gen_interval_q),
+480                            .cfg_count   (gen_count_q),
+481                            .out_ready   (gen_ready),
+482                            .out_valid   (gen_valid),
+483                            .out_sop     (gen_sop),
+484                            .out_eop     (gen_eop),
+485                            .out_dst     (gen_dst),
+486                            .out_src     (gen_src),
+487                            .out_len     (gen_len),
+488                            .out_data    (gen_data),
+489                            .running     (gen_running),
+490                            .remaining   (gen_left),
+491                            .fsm         (gen_fsm),
+492                            .done_pulse (gen_done_pulse),
+493                            .start_ack   (gen_start_ack)
+494                       );
+495                     
+496                       logic [7:0] q_level [N_PORTS];
+497                       logic [15:0] stat_rx, stat_tx, stat_drop;
+498                       logic        ovf_evt, dest_err_evt, drop_evt, fwd_eop_evt;
+499                     
+500                       pkt_switch u_sw (
+501                          .clk          (pclk),
+502                          .rst_n        (presetn),
+503                          .switch_en    (switch_en),
+504                          .port_en      (port_enable_q),
+505                          .fwd_en       (fwd_enable_q),
+506                          .stat_clr     (stat_clr_pulse | srst_pulse),
+507                          .in_valid     (gen_valid),
+508                          .in_sop       (gen_sop),
+509                          .in_eop       (gen_eop),
+510                          .in_dst       (gen_dst),
+511                          .in_src       (gen_src),
+512                          .in_len       (gen_len),
+513                          .in_data      (gen_data),
+514                          .in_ready     (gen_ready),
+515                          .q_level      (q_level),
+516                          .stat_rx      (stat_rx),
+517                          .stat_tx      (stat_tx),
+518                          .stat_drop    (stat_drop),
+519                          .ovf_evt      (ovf_evt),
+520                          .dest_err_evt (dest_err_evt),
+521                          .drop_evt     (drop_evt),
+522                          .fwd_eop_evt (fwd_eop_evt)
+523                       );
+524                     
+525                       logic busy;
+526                       assign busy = gen_running || (q_level[0] != 8'd0) || (q_level[1] != 8'd0) ||
+527                                     (q_level[2] != 8'd0) || (q_level[3] != 8'd0);
+528                     
+529                       logic [31:0] switch_status_r;
+530                       always_comb begin
+531        1/1              switch_status_r = 32'h0;
+532        1/1              switch_status_r[0]    = ~gen_running;
+533        1/1              switch_status_r[1]    = busy;
+534        1/1              switch_status_r[2]    = switch_en;
+535        1/1              switch_status_r[3]    = locked;
+536        1/1              switch_status_r[7:4] = port_enable_q;
+537        1/1              switch_status_r[8]    = gen_running;
+538        1/1              switch_status_r[9]    = |err_status_q;
+539        1/1              switch_status_r[17:16]= gen_fsm;
+540                       end
+541                     
+542                       logic [31:0] port_status_r;
+543                       always_comb begin
+544        1/1              port_status_r = 32'h0;
+545        1/1              port_status_r[7:0]   = q_level[0];
+546        1/1              port_status_r[15:8] = q_level[1];
+547        1/1              port_status_r[23:16] = q_level[2];
+548        1/1              port_status_r[31:24] = q_level[3];
+549                       end
+550                     
+551                       logic [31:0] gen_status_r;
+552                       always_comb begin
+553                     
+554        1/1              gen_status_r = 32'h0;
+555        1/1              gen_status_r[0]     = gen_running;
+556        1/1              gen_status_r[1]     = (gen_fsm == GEN_DONE);
+557        1/1              gen_status_r[3:2]   = gen_fsm;
+558        1/1              gen_status_r[23:8] = gen_left;
+559                       end
+560                     
+561                       logic [7:0] irq_w1c, err_w1c, err_set, irq_set;
+562                       assign irq_w1c = wr_irq_status ? pwdata[7:0] : 8'h00;
+563                       assign err_w1c = wr_err_status ? pwdata[7:0] : 8'h00;
+564                     
+565                       always_comb begin
+566        1/1              err_set = 8'h00;
+567        <font color = "red">1/2     ==>      if (dest_err_evt) err_set[1] = 1'b1;</font>
+                        MISSING_ELSE
+568        <font color = "red">1/2     ==>      if (ovf_evt)      err_set[2] = 1'b1;</font>
+                        MISSING_ELSE
+569        1/1              if (|err_inject_w[6:0]) begin
+570        1/1                err_set = err_set | err_inject_w;
+571        1/1                err_set[7] = 1'b1;
+572        1/1              end else if (err_inject_w[7]) begin
+573        <font color = "red">0/1     ==>        err_set[7] = 1'b1;</font>
+574                         end
+                        MISSING_ELSE
+575                       end
+576                     
+577                       logic [7:0] err_next;
+578                       assign err_next = (err_status_q | err_set) &amp; ~err_w1c;
+579                       logic err_promote;
+580                       assign err_promote = |((err_status_q | err_set) &amp; err_enable_q);
+581                     
+582                       always_comb begin
+583        1/1              irq_set = irq_force_w;
+584        <font color = "red">1/2     ==>      if (gen_done_pulse) irq_set[0] = 1'b1;</font>
+                        MISSING_ELSE
+585        2/2              if (err_promote)     irq_set[1] = 1'b1;
+                        MISSING_ELSE
+586        <font color = "red">1/2     ==>      if (ovf_evt)         irq_set[2] = 1'b1;</font>
+                        MISSING_ELSE
+587        <font color = "red">1/2     ==>      if (drop_evt)        irq_set[3] = 1'b1;</font>
+                        MISSING_ELSE
+588        <font color = "red">1/2     ==>      if (fwd_eop_evt)     irq_set[4] = 1'b1;</font>
+                        MISSING_ELSE
+589        <font color = "red">1/2     ==>      if (gen_start_ack) irq_set[6] = 1'b1;</font>
+                        MISSING_ELSE
+590        1/1              if ((q_level[0] &gt;= 8'd8) || (q_level[1] &gt;= 8'd8) ||
+591                             (q_level[2] &gt;= 8'd8) || (q_level[3] &gt;= 8'd8))
+592        <font color = "red">0/1     ==>        irq_set[5] = 1'b1;</font>
+                        MISSING_ELSE
+593                       end
+594                     
+595                       logic [7:0] irq_next;
+596                       assign irq_next = (irq_status_q | irq_set) &amp; ~irq_w1c;
+597                     
+598                       int unsigned inj_i, code_i;
+599                       logic [15:0] inject_pop;
+600                       logic [7:0] last_code;
+601                       always_comb begin
+602        1/1              inject_pop = 16'd0;
+603        1/1              for (inj_i = 0; inj_i &lt; 7; inj_i++)
+604        1/1                inject_pop = inject_pop + {15'd0, err_inject_w[inj_i]};
+605                       end
+606                       always_comb begin
+607        1/1              last_code = 8'hFF;
+608        1/1              for (code_i = 0; code_i &lt; 8; code_i++)
+609        1/1                if (err_set[code_i] &amp;&amp; last_code == 8'hFF)
+610        1/1                  last_code = code_i[7:0];
+                        MISSING_ELSE
+611                       end
+612                     
+613                       always_ff @(posedge pclk or negedge presetn) begin
+614        1/1              if (!presetn) begin
+615        1/1                locked         &lt;= 1'b1;
+616        1/1                switch_ctrl_q &lt;= 32'h0;
+617        1/1                port_enable_q &lt;= RST_PORT_ENABLE[3:0];
+618        1/1                fwd_enable_q   &lt;= RST_FWD_ENABLE[3:0];
+619        1/1                gen_ctrl_q     &lt;= 32'h0;
+620        1/1                gen_pkt_cfg_q &lt;= RST_GEN_PKT_CFG;
+621        1/1                gen_interval_q &lt;= RST_GEN_INTERVAL[15:0];
+622        1/1                gen_count_q    &lt;= RST_GEN_COUNT[15:0];
+623        1/1                irq_status_q   &lt;= 8'h0;
+624        1/1                irq_enable_q   &lt;= 8'h0;
+625        1/1                err_status_q   &lt;= 8'h0;
+626        1/1                err_enable_q   &lt;= 8'h0;
+627        1/1                err_count_q    &lt;= 16'h0;
+628        1/1                err_info_q     &lt;= 32'h0;
+629        1/1              end else if (srst_pulse) begin
+630        1/1                locked         &lt;= 1'b1;
+631        1/1                switch_ctrl_q &lt;= 32'h0;
+632        1/1                port_enable_q &lt;= RST_PORT_ENABLE[3:0];
+633        1/1                fwd_enable_q   &lt;= RST_FWD_ENABLE[3:0];
+634        1/1                gen_ctrl_q     &lt;= 32'h0;
+635        1/1                gen_pkt_cfg_q &lt;= RST_GEN_PKT_CFG;
+636        1/1                gen_interval_q &lt;= RST_GEN_INTERVAL[15:0];
+637                     
+638        1/1                gen_count_q    &lt;= RST_GEN_COUNT[15:0];
+639        1/1                irq_status_q   &lt;= 8'h0;
+640        1/1                irq_enable_q   &lt;= 8'h0;
+641        1/1                err_status_q   &lt;= 8'h0;
+642        1/1                err_enable_q   &lt;= 8'h0;
+643        1/1                err_count_q    &lt;= 16'h0;
+644        1/1                err_info_q     &lt;= 32'h0;
+645                         end else begin
+646        1/1                if (wr_lock)
+647        1/1                  locked &lt;= (pwdata != UNLOCK_KEY);
+                        MISSING_ELSE
+648                     
+649        1/1                if (cfg_wr_ok) begin
+650        1/1                  if (wr_switch_ctrl) begin
+651        <font color = "red">0/1     ==>            switch_ctrl_q &lt;= pwdata &amp; MASK_SWITCH_CTRL;</font>
+652                             end
+                        MISSING_ELSE
+653        1/1                  if (wr_port_en)
+654        1/1                    port_enable_q &lt;= pwdata[3:0];
+                        MISSING_ELSE
+655        1/1                  if (wr_fwd_en)
+656        1/1                    fwd_enable_q &lt;= pwdata[3:0];
+                        MISSING_ELSE
+657        1/1                  if (wr_gen_ctrl) begin
+658        <font color = "red">0/1     ==>            gen_ctrl_q &lt;= pwdata &amp; MASK_GEN_CTRL;</font>
+659                             end
+                        MISSING_ELSE
+660        1/1                  if (wr_gen_pkt) begin
+661        1/1                    gen_pkt_cfg_q &lt;= pwdata &amp; MASK_GEN_PKT_CFG;
+662        1/1                    if (pwdata[15:8] == 8'd0)
+663        <font color = "red">0/1     ==>              gen_pkt_cfg_q[15:8] &lt;= 8'd1;</font>
+                        MISSING_ELSE
+664                             end
+                        MISSING_ELSE
+665        1/1                  if (wr_gen_int)
+666        1/1                    gen_interval_q &lt;= pwdata[15:0];
+                        MISSING_ELSE
+667        1/1                  if (wr_gen_cnt)
+668        1/1                    gen_count_q &lt;= pwdata[15:0];
+                        MISSING_ELSE
+669        1/1                  if (wr_irq_enable)
+670        1/1                    irq_enable_q &lt;= pwdata[7:0];
+                        MISSING_ELSE
+671        1/1                  if (wr_err_enable)
+672        1/1                    err_enable_q &lt;= pwdata[7:0];
+                        MISSING_ELSE
+673                           end
+                        MISSING_ELSE
+674                     
+675        1/1                irq_status_q &lt;= irq_next;
+676        1/1                err_status_q &lt;= err_next;
+677                     
+678        1/1                if (err_clr_count) begin
+679        <font color = "red">0/1     ==>          err_count_q &lt;= 16'h0;</font>
+680        <font color = "red">0/1     ==>          err_info_q &lt;= 32'h0;</font>
+681        1/1                end else if (|err_set) begin
+682        1/1                  if (|err_inject_w[6:0]) begin
+683        1/1                    if (err_count_q &gt; (16'hFFFF - inject_pop))
+684        <font color = "red">0/1     ==>              err_count_q &lt;= 16'hFFFF;</font>
+685                               else
+686        1/1                      err_count_q &lt;= err_count_q + inject_pop;
+687        <font color = "red">0/1     ==>          end else if (err_count_q != 16'hFFFF) begin</font>
+688        <font color = "red">0/1     ==>            err_count_q &lt;= err_count_q + 16'd1;</font>
+689                             end
+                   <font color = "red">==>  MISSING_ELSE</font>
+690        1/1                  err_info_q[7:0]   &lt;= last_code;
+691        1/1                  err_info_q[15:8] &lt;= (|err_inject_w) ? 8'd1 : 8'd0;
+692        1/1                  err_info_q[17:16] &lt;= gen_dst;
+693        1/1                  err_info_q[31:20] &lt;= stat_tx[11:0];
+694                           end
+                        MISSING_ELSE
+695                         end
+696                       end
+697                     
+698                       assign irq = irq_gen_en &amp; |(irq_status_q &amp; irq_enable_q);
+699                     
+700                       logic [31:0] rdata_mux;
+701                       always_comb begin
+702        1/1              rdata_mux = 32'h0;
+703        1/1              unique case (word_addr)
+704        1/1                ADDR_DEVICE_ID:     rdata_mux = RST_DEVICE_ID;
+705        1/1                ADDR_VERSION:       rdata_mux = RST_VERSION;
+706        1/1                ADDR_SWITCH_STATUS: rdata_mux = switch_status_r;
+707        1/1                ADDR_PORT_STATUS:   rdata_mux = port_status_r;
+708        1/1                ADDR_GEN_STATUS:    rdata_mux = gen_status_r;
+709        1/1                ADDR_STAT_RX:       rdata_mux = {16'h0, stat_rx};
+710        1/1                ADDR_STAT_TX:       rdata_mux = {16'h0, stat_tx};
+711        1/1                ADDR_STAT_DROP:     rdata_mux = {16'h0, stat_drop};
+712        <font color = "red">0/1     ==>        ADDR_SWITCH_CTRL:   rdata_mux = switch_ctrl_q;</font>
+713        1/1                ADDR_PORT_ENABLE:   rdata_mux = {28'h0, port_enable_q};
+714        1/1                ADDR_FWD_ENABLE:    rdata_mux = {28'h0, fwd_enable_q};
+715        <font color = "red">0/1     ==>        ADDR_GEN_CTRL:      rdata_mux = gen_ctrl_q;</font>
+716        1/1                ADDR_GEN_PKT_CFG:   rdata_mux = gen_pkt_cfg_q;
+717        1/1                ADDR_GEN_INTERVAL: rdata_mux = {16'h0, gen_interval_q};
+718        1/1                ADDR_GEN_COUNT:     rdata_mux = {16'h0, gen_count_q};
+719        <font color = "red">0/1     ==>        ADDR_IRQ_STATUS:    rdata_mux = {24'h0, irq_status_q};</font>
+720        1/1                ADDR_IRQ_ENABLE:    rdata_mux = {24'h0, irq_enable_q};
+721                     
+722        1/1                ADDR_IRQ_FORCE:      rdata_mux = 32'h0;
+723        <font color = "red">0/1     ==>        ADDR_ERR_STATUS:     rdata_mux = {24'h0, err_status_q};</font>
+724        1/1                ADDR_ERR_ENABLE:     rdata_mux = {24'h0, err_enable_q};
+725        1/1                ADDR_ERR_INJECT:     rdata_mux = 32'h0;
+726        1/1                ADDR_ERR_COUNT:      rdata_mux = {16'h0, err_count_q};
+727        1/1                ADDR_ERR_INFO:       rdata_mux = err_info_q;
+728        1/1                ADDR_LOCK:           rdata_mux = {31'h0, locked};
+729        1/1                ADDR_SOFT_RESET:     rdata_mux = 32'h0;
+730        1/1                default:             rdata_mux = 32'h0;
+731                         endcase
+732                       end
+733                     
+734                       always_comb begin
+735        1/1              if (psel &amp;&amp; !pwrite) begin
+736        <font color = "red">1/2     ==>        if (unaligned || unmapped) prdata = 32'h0;</font>
+737        1/1                else                       prdata = rdata_mux;
+738                         end else begin
+739        1/1                prdata = 32'h0;
+</pre>
+<hr>
+<a name="Cond"></a>
+Cond Coverage for Module : <a href="mod0.html" >apb_pkt_switch</a><br clear=all>
+<table class="noborder">
+<col width="122">
+<col span="3" width="82">
+<tr><th></th><th>Total</th><th>Covered</th><th>Percent</th></tr>
+<tr class="s4"><td class="lf">Conditions</td><td>32</td><td>15</td><td>46.88</td></tr>
+<tr class="s4"><td class="lf">Logical</td><td>32</td><td>15</td><td>46.88</td></tr>
+<tr class="wht"><td class="lf">Non-Logical</td><td>0</td><td>0</td><td></td></tr>
+<tr class="wht"><td class="lf">Event</td><td>0</td><td>0</td><td></td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       447
+ EXPRESSION (wr_irq_force ? pwdata[7:0] : 8'b0)
+             ------1-----
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       448
+ EXPRESSION (wr_err_inject ? pwdata[7:0] : 8'b0)
+             ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       465
+ EXPRESSION ((cfg_wr_ok &amp;&amp; wr_gen_ctrl) ? pwdata[0] : gen_en)
+             -------------1------------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       465
+ SUB-EXPRESSION (cfg_wr_ok &amp;&amp; wr_gen_ctrl)
+                 ----1----    -----2-----
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       526
+ EXPRESSION (gen_running || (q_level[0] != 8'b0) || (q_level[1] != 8'b0) || (q_level[2] != 8'b0) || (q_level[3] != 8'b0))
+             -----1-----    ----------2---------    ----------3---------    ----------4---------    ----------5---------
+</pre>
+<table class="noborder">
+<col span="5" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>-5-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>0</td><td>0</td><td>0</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>0</td><td>0</td><td>0</td><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>0</td><td>0</td><td>1</td><td>0</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       562
+ EXPRESSION (wr_irq_status ? pwdata[7:0] : 8'b0)
+             ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       563
+ EXPRESSION (wr_err_status ? pwdata[7:0] : 8'b0)
+             ------1------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>1</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       590
+ EXPRESSION ((q_level[0] &gt;= 8'd8) || (q_level[1] &gt;= 8'd8) || (q_level[2] &gt;= 8'd8) || (q_level[3] &gt;= 8'd8))
+             ----------1---------    ----------2---------    ----------3---------    ----------4---------
+</pre>
+<table class="noborder">
+<col span="4" width="40">
+<tr><th>-1-</th><th>-2-</th><th>-3-</th><th>-4-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>0</td><td>0</td><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>0</td><td>0</td><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>0</td><td>1</td><td>0</td><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td>0</td><td>0</td><td class="lf">Not Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       691
+ EXPRESSION (((|err_inject_w)) ? 8'b1 : 8'b0)
+             --------1--------
+</pre>
+<table class="noborder">
+<col width="40">
+<tr><th>-1-</th><th>Status</th></tr>
+<tr class="uRed"><td>0</td><td class="lf">Not Covered</td></tr>
+<tr class="uGreen"><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       735
+ EXPRESSION (psel &amp;&amp; ((!pwrite)))
+             --1-    -----2-----
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>1</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uGreen"><td>1</td><td>1</td><td class="lf">Covered</td></tr>
+</table>
+<br clear=all>
+<pre class="code"> LINE       736
+ EXPRESSION (unaligned || unmapped)
+             ----1----    ----2---
+</pre>
+<table class="noborder">
+<col span="2" width="40">
+<tr><th>-1-</th><th>-2-</th><th>Status</th></tr>
+<tr class="uGreen"><td>0</td><td>0</td><td class="lf">Covered</td></tr>
+<tr class="uRed"><td>0</td><td>1</td><td class="lf">Not Covered</td></tr>
+<tr class="uRed"><td>1</td><td>0</td><td class="lf">Not Covered</td></tr>
+</table>
+<hr>
+<a name="Toggle"></a>
+Toggle Coverage for Module : <a href="mod0.html" >apb_pkt_switch</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s2">
+<td>Totals</td>
+<td class="rt">95</td>
+<td class="rt">25</td>
+<td class="rt">26.32 </td>
+</tr><tr class="s2">
+<td>Total Bits</td>
+<td class="rt">1386</td>
+<td class="rt">294</td>
+<td class="rt">21.21 </td>
+</tr><tr class="s2">
+<td nowrap>Total Bits 0->1</td>
+<td class="rt">693</td>
+<td class="rt">167</td>
+<td class="rt">24.10 </td>
+</tr><tr class="s1">
+<td nowrap>Total Bits 1->0</td>
+<td class="rt">693</td>
+<td class="rt">127</td>
+<td class="rt">18.33 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s3">
+<td>Ports</td>
+<td class="rt">11</td>
+<td class="rt">4</td>
+<td class="rt">36.36 </td>
+</tr><tr class="s4">
+<td>Port Bits</td>
+<td class="rt">176</td>
+<td class="rt">78</td>
+<td class="rt">44.32 </td>
+</tr><tr class="s4">
+<td nowrap>Port Bits 0->1</td>
+<td class="rt">88</td>
+<td class="rt">40</td>
+<td class="rt">45.45 </td>
+</tr><tr class="s4">
+<td nowrap>Port Bits 1->0</td>
+<td class="rt">88</td>
+<td class="rt">38</td>
+<td class="rt">43.18 </td>
+</tr></table><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80></th><th nowrap width=80></th><th nowrap width=80></th></tr><tr class="s2">
+<td>Signals</td>
+<td class="rt">84</td>
+<td class="rt">21</td>
+<td class="rt">25.00 </td>
+</tr><tr class="s1">
+<td>Signal Bits</td>
+<td class="rt">1210</td>
+<td class="rt">216</td>
+<td class="rt">17.85 </td>
+</tr><tr class="s2">
+<td nowrap>Signal Bits 0->1</td>
+<td class="rt">605</td>
+<td class="rt">127</td>
+<td class="rt">20.99 </td>
+</tr><tr class="s1">
+<td nowrap>Signal Bits 1->0</td>
+<td class="rt">605</td>
+<td class="rt">89</td>
+<td class="rt">14.71 </td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Port Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td><td class="alfsrt">Direction</td></tr><tr>
+<td>pclk</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>presetn</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>psel</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>penable</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pwrite</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>paddr[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>paddr[6:2]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>paddr[15:7]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pwdata[0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pwdata[1]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pwdata[5:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pwdata[9:6]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pwdata[13:10]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pwdata[16:14]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pwdata[17]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pwdata[18]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pwdata[20:19]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pwdata[21]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pwdata[22]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pwdata[24:23]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pwdata[25]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pwdata[26]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pwdata[28:27]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pwdata[29]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pwdata[30]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>INPUT</td>
+</tr><tr>
+<td>pwdata[31]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>INPUT</td>
+</tr><tr>
+<td>prdata[2:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[3]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[4]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[5]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[6]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[7]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[9:8]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[11:10]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[12]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[13]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[14]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[15]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[16]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[17]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[18]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[20:19]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[21]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[22]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[23]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[24]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[25]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>prdata[31:26]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>pready</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>pslverr</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td>OUTPUT</td>
+</tr><tr>
+<td>irq</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td>OUTPUT</td>
+</tr></table><br clear=all>
+<table align=left class="sortable noborder">
+<caption><b>Signal Details</b></caption>
+<tr class="sortablehead">
+<td class="alfsrt">Name</td><td class="alfsrt">Toggle</td><td class="alfsrt">Toggle 1->0</td><td class="alfsrt">Toggle 0->1</td></tr><tr>
+<td>acc</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>wr</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rd</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>unaligned</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>unmapped</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>word_addr[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>word_addr[6:2]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>word_addr[15:7]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>wr_ok</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rd_ok</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>locked</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>switch_ctrl_q[0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>switch_ctrl_q[2:1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>switch_ctrl_q[3]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>switch_ctrl_q[31:4]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>port_enable_q[0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>port_enable_q[1]</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>port_enable_q[2]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>port_enable_q[3]</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>fwd_enable_q[0]</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>fwd_enable_q[3:1]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_ctrl_q[0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_ctrl_q[2:1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_ctrl_q[3]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_ctrl_q[31:4]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_pkt_cfg_q[2:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_pkt_cfg_q[3]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_pkt_cfg_q[7:4]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_pkt_cfg_q[8]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_pkt_cfg_q[9]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_pkt_cfg_q[10]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_pkt_cfg_q[31:11]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_interval_q[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_interval_q[2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_interval_q[3]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_interval_q[5:4]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_interval_q[8:6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_interval_q[9]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_interval_q[11:10]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_interval_q[12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_interval_q[15:13]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_count_q[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_count_q[1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_count_q[2]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_count_q[6:3]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_count_q[8:7]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_count_q[10:9]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_count_q[11]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_count_q[12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_count_q[13]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_count_q[14]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_count_q[15]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>irq_status_q[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>irq_status_q[2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>irq_status_q[7:3]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>irq_enable_q[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>irq_enable_q[1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>irq_enable_q[2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>irq_enable_q[3]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>irq_enable_q[7:4]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>err_status_q[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_status_q[1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_status_q[6:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>err_status_q[7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_enable_q[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_enable_q[2:1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_enable_q[7:3]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>err_count_q[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_count_q[1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>err_count_q[2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_count_q[3]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>err_count_q[5:4]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_count_q[8:6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>err_count_q[9]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_count_q[11:10]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>err_count_q[12]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_count_q[15:13]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>err_info_q[0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_info_q[1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>err_info_q[2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_info_q[4:3]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>err_info_q[5]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_info_q[6]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>err_info_q[7]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_info_q[8]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_info_q[9]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>err_info_q[10]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_info_q[15:11]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>err_info_q[16]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_info_q[31:17]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>wr_switch_ctrl</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>wr_port_en</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>wr_fwd_en</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>wr_gen_ctrl</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>wr_gen_pkt</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>wr_gen_int</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>wr_gen_cnt</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>wr_irq_status</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>wr_irq_enable</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>wr_irq_force</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>wr_err_status</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>wr_err_enable</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>wr_err_inject</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>wr_lock</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>wr_soft_reset</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>cfg_wr_ok</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>srst_pulse</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>stat_clr_pulse</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>start_pulse</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>stop_pulse</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>irq_force_w[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>irq_force_w[7:1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>err_inject_w[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_inject_w[7:1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>err_clr_count</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>switch_en</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>irq_gen_en</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_en</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_cont</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_valid</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_sop</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_eop</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_ready</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_dst[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_src[0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_src[1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_fsm[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_len[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_len[1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_len[2]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>gen_len[7:3]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_data[31:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_running</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_done_pulse</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_start_ack</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_left[15:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_en_eff</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>stat_rx[15:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>stat_tx[15:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>stat_drop[15:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>ovf_evt</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>dest_err_evt</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>drop_evt</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>fwd_eop_evt</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>busy</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>switch_status_r[1:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>switch_status_r[2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>switch_status_r[3]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>switch_status_r[4]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>switch_status_r[5]</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>switch_status_r[6]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>switch_status_r[7]</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>switch_status_r[8]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>switch_status_r[9]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>switch_status_r[31:10]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>port_status_r[31:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>gen_status_r[31:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>irq_w1c[7:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>err_w1c[7:0]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>err_set[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_set[6:1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>err_set[7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>irq_set[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>irq_set[7:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>err_next[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_next[1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_next[6:2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>err_next[7]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>err_promote</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>irq_next[1:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>irq_next[2]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>irq_next[7:3]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>inject_pop[0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>inject_pop[15:1]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>last_code[7:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rdata_mux[4:0]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rdata_mux[5]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rdata_mux[6]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rdata_mux[7]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rdata_mux[10:8]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rdata_mux[11]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rdata_mux[12]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rdata_mux[13]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rdata_mux[14]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rdata_mux[15]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rdata_mux[16]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rdata_mux[17]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rdata_mux[18]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rdata_mux[20:19]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rdata_mux[21]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rdata_mux[22]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rdata_mux[23]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rdata_mux[24]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr><tr>
+<td>rdata_mux[25]</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+<td class="s9 cl">Yes</td>
+</tr><tr>
+<td>rdata_mux[31:26]</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+<td class="s3 cl">No</td>
+</tr></table><br clear=all>
+<hr>
+<a name="Branch"></a>
+Branch Coverage for Module : <a href="mod0.html" >apb_pkt_switch</a><br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=120></th><th nowrap width=80>Line No.</th><th nowrap width=80>Total</th><th nowrap width=80>Covered</th><th nowrap width=80>Percent</th></tr><tr class="s7">
+<td>Branches</td>
+<td></td>
+<td class="rt">109</td>
+<td class="rt">79</td>
+<td class="rt">72.48 </td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">447</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s10">
+<td>TERNARY</td>
+<td class="rt">448</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">465</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">562</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>TERNARY</td>
+<td class="rt">563</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s7">
+<td>IF</td>
+<td class="rt">414</td>
+<td class="rt">17</td>
+<td class="rt">12</td>
+<td class="rt">70.59 </td>
+</tr><tr class="s5">
+<td>IF</td>
+<td class="rt">567</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>IF</td>
+<td class="rt">568</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s6">
+<td>IF</td>
+<td class="rt">569</td>
+<td class="rt">3</td>
+<td class="rt">2</td>
+<td class="rt">66.67 </td>
+</tr><tr class="s5">
+<td>IF</td>
+<td class="rt">584</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s10">
+<td>IF</td>
+<td class="rt">585</td>
+<td class="rt">2</td>
+<td class="rt">2</td>
+<td class="rt">100.00</td>
+</tr><tr class="s5">
+<td>IF</td>
+<td class="rt">586</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>IF</td>
+<td class="rt">587</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>IF</td>
+<td class="rt">588</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>IF</td>
+<td class="rt">589</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s5">
+<td>IF</td>
+<td class="rt">590</td>
+<td class="rt">2</td>
+<td class="rt">1</td>
+<td class="rt">50.00 </td>
+</tr><tr class="s7">
+<td>IF</td>
+<td class="rt">614</td>
+<td class="rt">32</td>
+<td class="rt">24</td>
+<td class="rt">75.00 </td>
+</tr><tr class="s8">
+<td>CASE</td>
+<td class="rt">703</td>
+<td class="rt">26</td>
+<td class="rt">22</td>
+<td class="rt">84.62 </td>
+</tr><tr class="s6">
+<td>IF</td>
+<td class="rt">735</td>
+<td class="rt">3</td>
+<td class="rt">2</td>
+<td class="rt">66.67 </td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+447          assign irq_force_w   = wr_irq_force ? pwdata[7:0] : 8'h00;
+                                                 <font color = "green">-1-</font>  
+                                                 <font color = "green">==></font>  
+                                                 <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+448          assign err_inject_w = wr_err_inject ? pwdata[7:0] : 8'h00;
+                                                 <font color = "green">-1-</font>  
+                                                 <font color = "green">==></font>  
+                                                 <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+465          assign gen_en_eff = (cfg_wr_ok && wr_gen_ctrl) ? pwdata[0] : gen_en;
+                                                            <font color = "red">-1-</font>  
+                                                            <font color = "red">==></font>  
+                                                            <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+562          assign irq_w1c = wr_irq_status ? pwdata[7:0] : 8'h00;
+                                            <font color = "red">-1-</font>  
+                                            <font color = "red">==></font>  
+                                            <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+563          assign err_w1c = wr_err_status ? pwdata[7:0] : 8'h00;
+                                            <font color = "red">-1-</font>  
+                                            <font color = "red">==></font>  
+                                            <font color = "green">==></font>  
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+414            if (wr_ok) begin
+               <font color = "green">-1-</font>  
+415              unique case (word_addr)
+                        <font color = "red">-2-</font>  
+416                ADDR_SWITCH_CTRL: wr_switch_ctrl = 1'b1;
+           <font color = "red">        ==></font>
+417                ADDR_PORT_ENABLE: wr_port_en      = 1'b1;
+           <font color = "green">        ==></font>
+418                ADDR_FWD_ENABLE: wr_fwd_en        = 1'b1;
+           <font color = "green">        ==></font>
+419                ADDR_GEN_CTRL:    wr_gen_ctrl     = 1'b1;
+           <font color = "red">        ==></font>
+420                ADDR_GEN_PKT_CFG: wr_gen_pkt      = 1'b1;
+           <font color = "green">        ==></font>
+421                ADDR_GEN_INTERVAL:wr_gen_int      = 1'b1;
+           <font color = "green">        ==></font>
+422                ADDR_GEN_COUNT:   wr_gen_cnt      = 1'b1;
+           <font color = "green">        ==></font>
+423                ADDR_IRQ_STATUS: wr_irq_status = 1'b1;
+           <font color = "red">        ==></font>
+424                ADDR_IRQ_ENABLE: wr_irq_enable = 1'b1;
+           <font color = "green">        ==></font>
+425                ADDR_IRQ_FORCE:   wr_irq_force    = 1'b1;
+           <font color = "green">        ==></font>
+426                ADDR_ERR_STATUS: wr_err_status = 1'b1;
+           <font color = "red">        ==></font>
+427                ADDR_ERR_ENABLE: wr_err_enable = 1'b1;
+           <font color = "green">        ==></font>
+428                ADDR_ERR_INJECT: wr_err_inject = 1'b1;
+           <font color = "green">        ==></font>
+429                ADDR_LOCK:        wr_lock         = 1'b1;
+           <font color = "green">        ==></font>
+430                ADDR_SOFT_RESET: wr_soft_reset = 1'b1;
+           <font color = "green">        ==></font>
+431                default: ;
+           <font color = "red">        ==></font>
+432              endcase
+433            end
+               MISSING_ELSE
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center>apb_pkt_pkg::ADDR_SWITCH_CTRL </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>apb_pkt_pkg::ADDR_PORT_ENABLE </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>apb_pkt_pkg::ADDR_FWD_ENABLE </td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center>apb_pkt_pkg::ADDR_GEN_CTRL </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>apb_pkt_pkg::ADDR_GEN_PKT_CFG </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>apb_pkt_pkg::ADDR_GEN_INTERVAL </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>apb_pkt_pkg::ADDR_GEN_COUNT </td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center>apb_pkt_pkg::ADDR_IRQ_STATUS </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>apb_pkt_pkg::ADDR_IRQ_ENABLE </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>apb_pkt_pkg::ADDR_IRQ_FORCE </td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center>apb_pkt_pkg::ADDR_ERR_STATUS </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>apb_pkt_pkg::ADDR_ERR_ENABLE </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>apb_pkt_pkg::ADDR_ERR_INJECT </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>apb_pkt_pkg::ADDR_LOCK </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>apb_pkt_pkg::ADDR_SOFT_RESET </td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center>default</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+567            if (dest_err_evt) err_set[1] = 1'b1;
+               <font color = "red">-1-</font>  
+           <font color = "red">    ==></font>
+               MISSING_ELSE
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+568            if (ovf_evt)      err_set[2] = 1'b1;
+               <font color = "red">-1-</font>  
+           <font color = "red">    ==></font>
+               MISSING_ELSE
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+569            if (|err_inject_w[6:0]) begin
+               <font color = "green">-1-</font>  
+570              err_set = err_set | err_inject_w;
+           <font color = "green">      ==></font>
+571              err_set[7] = 1'b1;
+572            end else if (err_inject_w[7]) begin
+                        <font color = "red">-2-</font>  
+573              err_set[7] = 1'b1;
+           <font color = "red">      ==></font>
+574            end
+               MISSING_ELSE
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+584            if (gen_done_pulse) irq_set[0] = 1'b1;
+               <font color = "red">-1-</font>  
+           <font color = "red">    ==></font>
+               MISSING_ELSE
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+585            if (err_promote)     irq_set[1] = 1'b1;
+               <font color = "green">-1-</font>  
+           <font color = "green">    ==></font>
+               MISSING_ELSE
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+586            if (ovf_evt)         irq_set[2] = 1'b1;
+               <font color = "red">-1-</font>  
+           <font color = "red">    ==></font>
+               MISSING_ELSE
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+587            if (drop_evt)        irq_set[3] = 1'b1;
+               <font color = "red">-1-</font>  
+           <font color = "red">    ==></font>
+               MISSING_ELSE
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+588            if (fwd_eop_evt)     irq_set[4] = 1'b1;
+               <font color = "red">-1-</font>  
+           <font color = "red">    ==></font>
+               MISSING_ELSE
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+589            if (gen_start_ack) irq_set[6] = 1'b1;
+               <font color = "red">-1-</font>  
+           <font color = "red">    ==></font>
+               MISSING_ELSE
+           <font color = "green">    ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+590            if ((q_level[0] >= 8'd8) || (q_level[1] >= 8'd8) ||
+               <font color = "red">-1-</font>  
+591                (q_level[2] >= 8'd8) || (q_level[3] >= 8'd8))
+592              irq_set[5] = 1'b1;
+           <font color = "red">      ==></font>
+                 MISSING_ELSE
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+614            if (!presetn) begin
+               <font color = "green">-1-</font>  
+615              locked         <= 1'b1;
+           <font color = "green">      ==></font>
+616              switch_ctrl_q <= 32'h0;
+617              port_enable_q <= RST_PORT_ENABLE[3:0];
+618              fwd_enable_q   <= RST_FWD_ENABLE[3:0];
+619              gen_ctrl_q     <= 32'h0;
+620              gen_pkt_cfg_q <= RST_GEN_PKT_CFG;
+621              gen_interval_q <= RST_GEN_INTERVAL[15:0];
+622              gen_count_q    <= RST_GEN_COUNT[15:0];
+623              irq_status_q   <= 8'h0;
+624              irq_enable_q   <= 8'h0;
+625              err_status_q   <= 8'h0;
+626              err_enable_q   <= 8'h0;
+627              err_count_q    <= 16'h0;
+628              err_info_q     <= 32'h0;
+629            end else if (srst_pulse) begin
+                        <font color = "green">-2-</font>  
+630              locked         <= 1'b1;
+           <font color = "green">      ==></font>
+631              switch_ctrl_q <= 32'h0;
+632              port_enable_q <= RST_PORT_ENABLE[3:0];
+633              fwd_enable_q   <= RST_FWD_ENABLE[3:0];
+634              gen_ctrl_q     <= 32'h0;
+635              gen_pkt_cfg_q <= RST_GEN_PKT_CFG;
+636              gen_interval_q <= RST_GEN_INTERVAL[15:0];
+637        
+638              gen_count_q    <= RST_GEN_COUNT[15:0];
+639              irq_status_q   <= 8'h0;
+640              irq_enable_q   <= 8'h0;
+641              err_status_q   <= 8'h0;
+642              err_enable_q   <= 8'h0;
+643              err_count_q    <= 16'h0;
+644              err_info_q     <= 32'h0;
+645            end else begin
+646              if (wr_lock)
+                 <font color = "green">-3-</font>  
+647                locked <= (pwdata != UNLOCK_KEY);
+           <font color = "green">        ==></font>
+                   MISSING_ELSE
+           <font color = "green">        ==></font>
+648        
+649              if (cfg_wr_ok) begin
+                 <font color = "green">-4-</font>  
+650                if (wr_switch_ctrl) begin
+                   <font color = "red">-5-</font>  
+651                  switch_ctrl_q <= pwdata & MASK_SWITCH_CTRL;
+           <font color = "red">          ==></font>
+652                end
+                   MISSING_ELSE
+           <font color = "green">        ==></font>
+653                if (wr_port_en)
+                   <font color = "green">-6-</font>  
+654                  port_enable_q <= pwdata[3:0];
+           <font color = "green">          ==></font>
+                     MISSING_ELSE
+           <font color = "green">          ==></font>
+655                if (wr_fwd_en)
+                   <font color = "green">-7-</font>  
+656                  fwd_enable_q <= pwdata[3:0];
+           <font color = "green">          ==></font>
+                     MISSING_ELSE
+           <font color = "green">          ==></font>
+657                if (wr_gen_ctrl) begin
+                   <font color = "red">-8-</font>  
+658                  gen_ctrl_q <= pwdata & MASK_GEN_CTRL;
+           <font color = "red">          ==></font>
+659                end
+                   MISSING_ELSE
+           <font color = "green">        ==></font>
+660                if (wr_gen_pkt) begin
+                   <font color = "green">-9-</font>  
+661                  gen_pkt_cfg_q <= pwdata & MASK_GEN_PKT_CFG;
+662                  if (pwdata[15:8] == 8'd0)
+                     <font color = "red">-10-</font>  
+663                    gen_pkt_cfg_q[15:8] <= 8'd1;
+           <font color = "red">            ==></font>
+                       MISSING_ELSE
+           <font color = "green">            ==></font>
+664                end
+                   MISSING_ELSE
+           <font color = "green">        ==></font>
+665                if (wr_gen_int)
+                   <font color = "green">-11-</font>  
+666                  gen_interval_q <= pwdata[15:0];
+           <font color = "green">          ==></font>
+                     MISSING_ELSE
+           <font color = "green">          ==></font>
+667                if (wr_gen_cnt)
+                   <font color = "green">-12-</font>  
+668                  gen_count_q <= pwdata[15:0];
+           <font color = "green">          ==></font>
+                     MISSING_ELSE
+           <font color = "green">          ==></font>
+669                if (wr_irq_enable)
+                   <font color = "green">-13-</font>  
+670                  irq_enable_q <= pwdata[7:0];
+           <font color = "green">          ==></font>
+                     MISSING_ELSE
+           <font color = "green">          ==></font>
+671                if (wr_err_enable)
+                   <font color = "green">-14-</font>  
+672                  err_enable_q <= pwdata[7:0];
+           <font color = "green">          ==></font>
+                     MISSING_ELSE
+           <font color = "green">          ==></font>
+673              end
+                 MISSING_ELSE
+           <font color = "green">      ==></font>
+674        
+675              irq_status_q <= irq_next;
+676              err_status_q <= err_next;
+677        
+678              if (err_clr_count) begin
+                 <font color = "red">-15-</font>  
+679                err_count_q <= 16'h0;
+           <font color = "red">        ==></font>
+680                err_info_q <= 32'h0;
+681              end else if (|err_set) begin
+                          <font color = "green">-16-</font>  
+682                if (|err_inject_w[6:0]) begin
+                   <font color = "red">-17-</font>  
+683                  if (err_count_q > (16'hFFFF - inject_pop))
+                     <font color = "red">-18-</font>  
+684                    err_count_q <= 16'hFFFF;
+           <font color = "red">            ==></font>
+685                  else
+686                    err_count_q <= err_count_q + inject_pop;
+           <font color = "green">            ==></font>
+687                end else if (err_count_q != 16'hFFFF) begin
+                            <font color = "red">-19-</font>  
+688                  err_count_q <= err_count_q + 16'd1;
+           <font color = "red">          ==></font>
+689                end
+                   MISSING_ELSE
+           <font color = "red">        ==></font>
+690                err_info_q[7:0]   <= last_code;
+691                err_info_q[15:8] <= (|err_inject_w) ? 8'd1 : 8'd0;
+                                                       <font color = "red">-20-</font>  
+                                                       <font color = "green">==></font>  
+                                                       <font color = "red">==></font>  
+692                err_info_q[17:16] <= gen_dst;
+693                err_info_q[31:20] <= stat_tx[11:0];
+694              end
+                 MISSING_ELSE
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>-3-</th><th nowrap width=80>-4-</th><th nowrap width=80>-5-</th><th nowrap width=80>-6-</th><th nowrap width=80>-7-</th><th nowrap width=80>-8-</th><th nowrap width=80>-9-</th><th nowrap width=80>-10-</th><th nowrap width=80>-11-</th><th nowrap width=80>-12-</th><th nowrap width=80>-13-</th><th nowrap width=80>-14-</th><th nowrap width=80>-15-</th><th nowrap width=80>-16-</th><th nowrap width=80>-17-</th><th nowrap width=80>-18-</th><th nowrap width=80>-19-</th><th nowrap width=80>-20-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>1</td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>1</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center>0</td>
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+703            unique case (word_addr)
+                      <font color = "red">-1-</font>  
+704              ADDR_DEVICE_ID:     rdata_mux = RST_DEVICE_ID;
+           <font color = "green">      ==></font>
+705              ADDR_VERSION:       rdata_mux = RST_VERSION;
+           <font color = "green">      ==></font>
+706              ADDR_SWITCH_STATUS: rdata_mux = switch_status_r;
+           <font color = "green">      ==></font>
+707              ADDR_PORT_STATUS:   rdata_mux = port_status_r;
+           <font color = "green">      ==></font>
+708              ADDR_GEN_STATUS:    rdata_mux = gen_status_r;
+           <font color = "green">      ==></font>
+709              ADDR_STAT_RX:       rdata_mux = {16'h0, stat_rx};
+           <font color = "green">      ==></font>
+710              ADDR_STAT_TX:       rdata_mux = {16'h0, stat_tx};
+           <font color = "green">      ==></font>
+711              ADDR_STAT_DROP:     rdata_mux = {16'h0, stat_drop};
+           <font color = "green">      ==></font>
+712              ADDR_SWITCH_CTRL:   rdata_mux = switch_ctrl_q;
+           <font color = "red">      ==></font>
+713              ADDR_PORT_ENABLE:   rdata_mux = {28'h0, port_enable_q};
+           <font color = "green">      ==></font>
+714              ADDR_FWD_ENABLE:    rdata_mux = {28'h0, fwd_enable_q};
+           <font color = "green">      ==></font>
+715              ADDR_GEN_CTRL:      rdata_mux = gen_ctrl_q;
+           <font color = "red">      ==></font>
+716              ADDR_GEN_PKT_CFG:   rdata_mux = gen_pkt_cfg_q;
+           <font color = "green">      ==></font>
+717              ADDR_GEN_INTERVAL: rdata_mux = {16'h0, gen_interval_q};
+           <font color = "green">      ==></font>
+718              ADDR_GEN_COUNT:     rdata_mux = {16'h0, gen_count_q};
+           <font color = "green">      ==></font>
+719              ADDR_IRQ_STATUS:    rdata_mux = {24'h0, irq_status_q};
+           <font color = "red">      ==></font>
+720              ADDR_IRQ_ENABLE:    rdata_mux = {24'h0, irq_enable_q};
+           <font color = "green">      ==></font>
+721        
+722              ADDR_IRQ_FORCE:      rdata_mux = 32'h0;
+           <font color = "green">      ==></font>
+723              ADDR_ERR_STATUS:     rdata_mux = {24'h0, err_status_q};
+           <font color = "red">      ==></font>
+724              ADDR_ERR_ENABLE:     rdata_mux = {24'h0, err_enable_q};
+           <font color = "green">      ==></font>
+725              ADDR_ERR_INJECT:     rdata_mux = 32'h0;
+           <font color = "green">      ==></font>
+726              ADDR_ERR_COUNT:      rdata_mux = {16'h0, err_count_q};
+           <font color = "green">      ==></font>
+727              ADDR_ERR_INFO:       rdata_mux = err_info_q;
+           <font color = "green">      ==></font>
+728              ADDR_LOCK:           rdata_mux = {31'h0, locked};
+           <font color = "green">      ==></font>
+729              ADDR_SOFT_RESET:     rdata_mux = 32'h0;
+           <font color = "green">      ==></font>
+730              default:             rdata_mux = 32'h0;
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>Status</th></tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_DEVICE_ID </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_VERSION </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_SWITCH_STATUS </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_PORT_STATUS </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_GEN_STATUS </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_STAT_RX </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_STAT_TX </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_STAT_DROP </td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>apb_pkt_pkg::ADDR_SWITCH_CTRL </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_PORT_ENABLE </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_FWD_ENABLE </td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>apb_pkt_pkg::ADDR_GEN_CTRL </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_GEN_PKT_CFG </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_GEN_INTERVAL </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_GEN_COUNT </td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>apb_pkt_pkg::ADDR_IRQ_STATUS </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_IRQ_ENABLE </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_IRQ_FORCE </td>
+<td>Covered</td>
+</tr><tr class="uRed">
+<td align=center>apb_pkt_pkg::ADDR_ERR_STATUS </td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_ERR_ENABLE </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_ERR_INJECT </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_ERR_COUNT </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_ERR_INFO </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_LOCK </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>apb_pkt_pkg::ADDR_SOFT_RESET </td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>default</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+<pre class="code"><br clear=all>
+735            if (psel && !pwrite) begin
+               <font color = "green">-1-</font>  
+736              if (unaligned || unmapped) prdata = 32'h0;
+                 <font color = "red">-2-</font>  
+           <font color = "red">      ==></font>
+737              else                       prdata = rdata_mux;
+           <font color = "green">      ==></font>
+738            end else begin
+739              prdata = 32'h0;
+           <font color = "green">      ==></font>
+</pre>
+<br clear=all>
+<span class=repname>Branches:</span>
+<br clear=all>
+<table align=left class="noborder">
+<tr>
+<th nowrap width=80>-1-</th><th nowrap width=80>-2-</th><th nowrap width=80>Status</th></tr><tr class="uRed">
+<td align=center>1</td>
+<td align=center>1</td>
+<td>Not Covered</td>
+</tr><tr class="uGreen">
+<td align=center>1</td>
+<td align=center>0</td>
+<td>Covered</td>
+</tr><tr class="uGreen">
+<td align=center>0</td>
+<td align=center nowrap>-</td>
+<td>Covered</td>
+</tr></table><br clear=all>
+</div>
+</div>
+<div class="ui-layout-center-inner-north">
+<div id="center-bread-crumb" class="breadCrumb module urg-margin-bottom">
+  <ul name="inst_tag_0">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+  <ul name="tag_apb_pkt_switch">
+    <li>
+      <a href="#Line">Line</a>    </li>
+    <li>
+      <a href="#Cond">Cond</a>    </li>
+    <li>
+      <a href="#Toggle">Toggle</a>    </li>
+    <li>
+      <a href="#Branch">Branch</a>    </li>
+  </ul>
+</div>
+</div>
+</div>
+<div class="ui-layout-south">
+<table align=center><tr><td class="s0 cl">0%</td>
+<td class="s1 cl">10%</td>
+<td class="s2 cl">20%</td>
+<td class="s3 cl">30%</td>
+<td class="s4 cl">40%</td>
+<td class="s5 cl">50%</td>
+<td class="s6 cl">60%</td>
+<td class="s7 cl">70%</td>
+<td class="s8 cl">80%</td>
+<td class="s9 cl">90%</td>
+<td class="s10 cl">100%</td></tr></table></div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<session version="1.1" release="Q-2020.03-SP2-8" timestp="2026-11-05 09:26:57 GMT">
+  <info>
+    <attr name="datetime" value="Thu Nov  5 14:57:05 2026
+"/>
+    <attr name="command" value="urg -dir simv.vdb -dir overall_cov.vdb -report ral_coverage_report"/>
+    <attr name="top_instance" value="uvm_custom_install_verdi_recording,tb"/>
+  </info>
+  <hvp>
+    <datadef>
+      <metdef name="Line" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Cond" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Toggle" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="FSM" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Branch" type="ratio" aggregator="average" builtin="1" />
+      <metdef name="Group" type="percent" aggregator="average" builtin="1" />
+    </datadef>
+  </hvp>
+  <old_coverage>
+  <scope type="top" name="top">
+    <metric name="Line" value="233/690" />
+    <metric name="Cond" value="28/99" />
+    <metric name="Toggle" value="457/2414" />
+    <metric name="FSM" value="0/8" />
+    <metric name="Branch" value="99/196" />
+    <metric name="Group" value="72.6467%" />
+  </scope>
+  <scope type="instance" name="top">
+  </scope>
+  <scope type="group" name="top">
+    <scope type="group" name="$unit::port_status_reg::port_status_reg_cg">
+      <metric name="Group" value="50%" />
+    </scope>
+    <scope type="group" name="$unit::stat_drop_reg::stat_drop_reg_cg">
+      <metric name="Group" value="50%" />
+    </scope>
+    <scope type="group" name="$unit::port_enable_reg::port_enable_reg_cg">
+      <metric name="Group" value="50%" />
+    </scope>
+    <scope type="group" name="$unit::gen_pkt_cfg_reg::gen_pkt_cfg_reg_cg">
+      <metric name="Group" value="50%" />
+    </scope>
+    <scope type="group" name="$unit::irq_status_reg::irq_status_reg_cg">
+      <metric name="Group" value="50%" />
+    </scope>
+    <scope type="group" name="$unit::err_enable_reg::err_enable_reg_cg">
+      <metric name="Group" value="50%" />
+    </scope>
+    <scope type="group" name="$unit::err_count_reg::err_count_reg_cg">
+      <metric name="Group" value="50%" />
+    </scope>
+    <scope type="group" name="$unit::soft_reset_reg::soft_reset_reg_cg">
+      <metric name="Group" value="50%" />
+    </scope>
+    <scope type="group" name="$unit::err_inject_reg::err_inject_reg_cg">
+      <metric name="Group" value="55.5555%" />
+    </scope>
+    <scope type="group" name="$unit::irq_enable_reg::irq_enable_reg_cg">
+      <metric name="Group" value="56.25%" />
+    </scope>
+    <scope type="group" name="$unit::err_status_reg::err_status_reg_cg">
+      <metric name="Group" value="62.5%" />
+    </scope>
+    <scope type="group" name="$unit::switch_status_reg::switch_status_reg_cg">
+      <metric name="Group" value="62.6953%" />
+    </scope>
+    <scope type="group" name="$unit::device_id_reg::device_id_reg_cg">
+      <metric name="Group" value="66.6667%" />
+    </scope>
+    <scope type="group" name="$unit::switch_ctrl_reg::switch_ctrl_reg_cg">
+      <metric name="Group" value="66.6667%" />
+    </scope>
+    <scope type="group" name="$unit::fwd_enable_reg::fwd_enable_reg_cg">
+      <metric name="Group" value="75%" />
+    </scope>
+    <scope type="group" name="$unit::version_reg::version_reg_cg">
+      <metric name="Group" value="83.3333%" />
+    </scope>
+    <scope type="group" name="$unit::err_info_reg::err_info_reg_cg">
+      <metric name="Group" value="87.5%" />
+    </scope>
+    <scope type="group" name="$unit::gen_status_reg::gen_status_reg_cg">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::stat_rx_reg::stat_rx_reg_cg">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::stat_tx_reg::stat_tx_reg_cg">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::gen_ctrl_reg::gen_ctrl_reg_cg">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::gen_interval_reg::gen_interval_reg_cg">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::gen_count_reg::gen_count_reg_cg">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::irq_force_reg::irq_force_reg_cg">
+      <metric name="Group" value="100%" />
+    </scope>
+    <scope type="group" name="$unit::lock_reg::lock_reg_cg">
+      <metric name="Group" value="100%" />
+    </scope>
+  </scope>
+  <scope type="assert" name="Statistics">
+  </scope>
+  </old_coverage>
+</session>

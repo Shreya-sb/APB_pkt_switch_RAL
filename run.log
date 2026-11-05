@@ -1,0 +1,103 @@
+Command: /fetools/work_area/frontend/shreyasb/bench_project/Apb_RAL/./simv +UVM_TESTNAME=all_backdoor_test -l run.log
+Chronologic VCS simulator copyright 1991-2020
+Contains Synopsys proprietary information.
+Compiler version Q-2020.03-SP2-8_Full64; Runtime version Q-2020.03-SP2-8_Full64;  Oct 30 13:29 2026
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh(402) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2.Synopsys
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+  See http://www.eda.org/svdb/view.php?id=3313 for more details.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+  See http://www.eda.org/svdb/view.php?id=3770 for more details.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO @ 0: reporter [RNTST] Running test all_backdoor_test...
+UVM_INFO reg_seq.sv(816) @ 0: uvm_test_top.env.agent_inst.seqr@@rseq [BD_SEQ] Waiting for reset to complete
+Time=1000 presetn=0 port_enable_q=f locked=1
+-------------monitor begin----------
+-------------monitor begin----------
+UVM_INFO reg_seq.sv(821) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_SEQ] Starting all-register backdoor test
+UVM_INFO reg_seq.sv(739) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_TEST] POKING switch_ctrl_inst with 0x9
+UVM_INFO reg_seq.sv(759) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_PASS] switch_ctrl_inst Expected=0x9 Actual=0x9
+UVM_INFO reg_seq.sv(739) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_TEST] POKING port_enable_inst with 0x5
+UVM_INFO reg_seq.sv(759) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_PASS] port_enable_inst Expected=0x5 Actual=0x5
+UVM_INFO reg_seq.sv(739) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_TEST] POKING fwd_enable_inst with 0xa
+UVM_INFO reg_seq.sv(759) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_PASS] fwd_enable_inst Expected=0xa Actual=0xa
+UVM_INFO reg_seq.sv(739) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_TEST] POKING gen_ctrl_inst with 0x9
+UVM_INFO reg_seq.sv(759) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_PASS] gen_ctrl_inst Expected=0x9 Actual=0x9
+UVM_INFO reg_seq.sv(739) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_TEST] POKING gen_pkt_cfg_inst with 0x509
+UVM_INFO reg_seq.sv(759) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_PASS] gen_pkt_cfg_inst Expected=0x509 Actual=0x509
+UVM_INFO reg_seq.sv(739) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_TEST] POKING gen_interval_inst with 0x1234
+UVM_INFO reg_seq.sv(759) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_PASS] gen_interval_inst Expected=0x1234 Actual=0x1234
+UVM_INFO reg_seq.sv(739) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_TEST] POKING gen_count_inst with 0x5678
+UVM_INFO reg_seq.sv(759) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_PASS] gen_count_inst Expected=0x5678 Actual=0x5678
+UVM_INFO reg_seq.sv(739) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_TEST] POKING irq_status_inst with 0x5
+UVM_INFO reg_seq.sv(759) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_PASS] irq_status_inst Expected=0x5 Actual=0x5
+UVM_INFO reg_seq.sv(739) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_TEST] POKING irq_enable_inst with 0xa
+UVM_INFO reg_seq.sv(759) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_PASS] irq_enable_inst Expected=0xa Actual=0xa
+UVM_INFO reg_seq.sv(739) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_TEST] POKING err_status_inst with 0x3
+UVM_INFO reg_seq.sv(759) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_PASS] err_status_inst Expected=0x3 Actual=0x3
+UVM_INFO reg_seq.sv(739) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_TEST] POKING err_enable_inst with 0x6
+UVM_INFO reg_seq.sv(759) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_PASS] err_enable_inst Expected=0x6 Actual=0x6
+UVM_INFO reg_seq.sv(739) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_TEST] POKING err_count_inst with 0x1234
+UVM_INFO reg_seq.sv(759) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_PASS] err_count_inst Expected=0x1234 Actual=0x1234
+UVM_INFO reg_seq.sv(739) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_TEST] POKING err_info_inst with 0x5a5
+UVM_INFO reg_seq.sv(759) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_PASS] err_info_inst Expected=0x5a5 Actual=0x5a5
+UVM_INFO reg_seq.sv(739) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_TEST] POKING lock_reg_inst with 0x1
+UVM_INFO reg_seq.sv(759) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_PASS] lock_reg_inst Expected=0x1 Actual=0x1
+UVM_INFO reg_seq.sv(788) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_TEST] PEEKING switch_status_inst
+UVM_INFO reg_seq.sv(795) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_PASS] switch_status_inst Read = 0xf9
+UVM_INFO reg_seq.sv(788) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_TEST] PEEKING port_status_inst
+UVM_INFO reg_seq.sv(795) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_PASS] port_status_inst Read = 0x0
+UVM_INFO reg_seq.sv(788) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_TEST] PEEKING gen_status_inst
+UVM_INFO reg_seq.sv(795) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_PASS] gen_status_inst Read = 0x0
+UVM_INFO reg_seq.sv(788) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_TEST] PEEKING stat_rx_inst
+UVM_INFO reg_seq.sv(795) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_PASS] stat_rx_inst Read = 0x0
+UVM_INFO reg_seq.sv(788) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_TEST] PEEKING stat_tx_inst
+UVM_INFO reg_seq.sv(795) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_PASS] stat_tx_inst Read = 0x0
+UVM_INFO reg_seq.sv(788) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_TEST] PEEKING stat_drop_inst
+UVM_INFO reg_seq.sv(795) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_PASS] stat_drop_inst Read = 0x0
+UVM_INFO reg_seq.sv(893) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_SKIP] device_id_inst : Constant read-only register
+UVM_INFO reg_seq.sv(897) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_SKIP] version_inst : Constant read-only register
+UVM_INFO reg_seq.sv(901) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_SKIP] irq_force_inst : Command register, no storage
+UVM_INFO reg_seq.sv(905) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_SKIP] err_inject_inst : Command register, no storage
+UVM_INFO reg_seq.sv(909) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_SKIP] soft_reset_reg_inst : Command register, no storage
+UVM_INFO reg_seq.sv(914) @ 35000: uvm_test_top.env.agent_inst.seqr@@rseq [BD_SEQ] All-register backdoor test completed
+-------------monitor begin----------
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_objection.svh(1276) @ 65000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_report_server.svh(894) @ 65000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   51
+UVM_WARNING :    0
+UVM_ERROR :    0
+UVM_FATAL :    0
+** Report counts by id
+[BD_PASS]    20
+[BD_SEQ]     3
+[BD_SKIP]     5
+[BD_TEST]    20
+[RNTST]     1
+[TEST_DONE]     1
+[UVM/RELNOTES]     1
+
+$finish called from file "/fetools/synopsys/installed_tools/vcs/vcs/Q-2020.03-SP2-8/etc/uvm-1.2/base/uvm_root.svh", line 527.
+$finish at simulation time                65000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 65000 ps
+CPU Time:      0.720 seconds;       Data structure size:   0.5Mb
+Fri Oct 30 13:29:55 2026
